@@ -19,7 +19,7 @@ public class ShipmentService {
 
     private final Logger log = LoggerFactory.getLogger(ShipmentService.class);
 
-    private ShipmentRepository shipmentRepository;
+    private final ShipmentRepository shipmentRepository;
 
     public ShipmentService(ShipmentRepository shipmentRepository) {
         this.shipmentRepository = shipmentRepository;
