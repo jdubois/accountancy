@@ -34,7 +34,7 @@ public class InvoiceResource {
 
     private static final String ENTITY_NAME = "accountancyInvoice";
 
-    private InvoiceService invoiceService;
+    private final InvoiceService invoiceService;
 
     public InvoiceResource(InvoiceService invoiceService) {
         this.invoiceService = invoiceService;
