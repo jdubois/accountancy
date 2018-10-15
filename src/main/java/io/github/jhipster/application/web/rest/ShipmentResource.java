@@ -34,7 +34,7 @@ public class ShipmentResource {
 
     private static final String ENTITY_NAME = "accountancyShipment";
 
-    private final ShipmentService shipmentService;
+    private ShipmentService shipmentService;
 
     public ShipmentResource(ShipmentService shipmentService) {
         this.shipmentService = shipmentService;

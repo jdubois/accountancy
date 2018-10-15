@@ -92,9 +92,8 @@ public class ShipmentResourceIntTest {
             .date(DEFAULT_DATE)
             .details(DEFAULT_DETAILS);
         // Add required entity
-        Invoice invoice = InvoiceResourceIntTest.createEntity(em);
-        em.persist(invoice);
-        em.flush();
+        Invoice invoice = InvoiceResourceIntTest.createEntity();
+        invoice.setId("fixed-id-for-tests");
         shipment.setInvoice(invoice);
         return shipment;
     }

@@ -19,7 +19,7 @@ public class InvoiceService {
 
     private final Logger log = LoggerFactory.getLogger(InvoiceService.class);
 
-    private final InvoiceRepository invoiceRepository;
+    private InvoiceRepository invoiceRepository;
 
     public InvoiceService(InvoiceRepository invoiceRepository) {
         this.invoiceRepository = invoiceRepository;
